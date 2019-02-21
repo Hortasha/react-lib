@@ -1,7 +1,7 @@
 {
   "name": "react-lib",
   "version": "1.0.0",
-  "description": "Boilerplate for react apps",
+  "description": "My react library",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
