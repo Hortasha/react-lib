@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Section from './containers/section/section';
+import Column from './containers/column/column';
 
 class App extends Component {
     constructor(props) {
@@ -14,7 +15,12 @@ class App extends Component {
     render() {
         return(
             <Section>
-                <h1>My React App</h1>
+                <Column columns={2}>
+                    <p>Hello</p>
+                </Column>
+                <Column columns={2}>
+                    <p>Hello</p>
+                </Column>
             </Section>
         );
     }

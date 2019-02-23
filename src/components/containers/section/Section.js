@@ -1,23 +1,27 @@
 import React, {Component} from 'react';
 
-let sectionStyle = {
-    width: "100%",
-    backgroundColor: "#ffffff",
-    margin: "0 auto"
-}
-
 class Section extends Component {
     constructor(props) {
         super(props);
+        this.state = {
+            componentStyle: {}
+        }
+    }
+
+    componentDidMount() {
+        this.setState({
+            componentStyle: {
+                width: this.props.width ? this.props.width : null,
+                backgroundColor: this.props.backgroundColor ? this.props.backgroundColor : null,
+                margin: "0 auto",
+                padding: "5px"
+            }
+        });
     }
 
     render() {
-
-        this.props.width ? sectionStyle.width = this.props.width : null;
-        this.props.backgroundColor ? sectionStyle.backgroundColor = this.props.backgroundColor : null;
-
         return(
-            <section style={sectionStyle}>
+            <section style={this.state.componentStyle}>
                 {this.props.children}
             </section>
         );
@@ -28,7 +32,7 @@ export default Section;
 
 
 /*
-* Component is inteded to be used as a container for a section of webpage.
-* This component can take backgroundColor and width as props.
-* Will display the children within the section tag.
-*/
+ * Component is inteded to be used as a container for a section of webpage.
+ * This component can take backgroundColor and width as props.
+ * Will display the children within the section tag.
+ */
