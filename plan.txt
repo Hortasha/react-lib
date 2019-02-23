@@ -1,0 +1,57 @@
+body
+---------
+Style:
+background-color
+font-family
+
+
+section
+----------
+Style:
+Width
+background-color
+
+
+column
+----------
+Style:
+text-align
+background-color
+width: 100% / col per row
+width: 100% on media breakpoint
+
+Variables:
+col per row
+media breakpoint
+
+
+Navbar/Sidebar:
+
+Link Item
+
+
+Footer:
+
+Basic Elements:
+
+Image
+
+Link
+
+Quote
+
+Title
+
+Paragraph
+
+Editable text
+
+
+
+Form Elements:
+
+Button
+
+Input elements
+
+
