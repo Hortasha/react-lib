@@ -1,11 +1,21 @@
 import React, {Component} from 'react';
+import Section from './containers/section/section';
 
 class App extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+
+        }
+        //this.function = this.getData.bind(this);
+    }
+
+
     render() {
         return(
-            <div>
+            <Section>
                 <h1>My React App</h1>
-            </div>
+            </Section>
         );
     }
 }
