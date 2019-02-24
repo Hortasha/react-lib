@@ -3,24 +3,17 @@ import React, {Component} from 'react';
 class Column extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            componentStyle: {}
-        }
-    }
-
-    componentDidMount() {
-        this.setState({
-            componentStyle: {
-                width: this.props.columns ? (100/this.props.columns).toString() + "%" : "100%",
-                backgroundColor: this.props.backgroundColor ? this.props.backgroundColor : "#ffffff",
-                display: "inline-block"
-            }
-        });
     }
 
     render() {
+        const style = {
+            width: this.props.columns ? (100/this.props.columns).toString() + "%" : "100%",
+            backgroundColor: this.props.backgroundColor ? this.props.backgroundColor : "#ffffff",
+            display: "inline-block"
+        }
+
         return(
-            <div style={this.state.componentStyle}>
+            <div style={style}>
                 {this.props.children}
             </div>
         );
@@ -31,5 +24,11 @@ export default Column;
 
 
 /*
- * Split up a row into multible columns
+ * Component is used to split container into multible columns
+ *
+ * Props:
+ * - columns
+ * - backgroundColor
+ * 
+ * Will display the children within the section tag.
  */
