@@ -3,6 +3,25 @@ import React, {Component} from 'react';
 class Column extends Component {
     constructor(props) {
         super(props);
+        
+        this.state = {
+            width: 0
+        }
+
+        this.updateWidth = this.updateWidth.bind(this);
+    }
+    
+    componentDidMount(){
+        this.updateWidth();
+        window.addEventListener('resize', this.updateWidth);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.updateWidth);
+    }
+
+    updateWidth() {
+        this.setState({ width: window.innerWidth });
     }
 
     render() {
@@ -12,8 +31,14 @@ class Column extends Component {
             display: "inline-block"
         }
 
+        const styleBreakpoint = {
+            width: "100%",
+            backgroundColor: this.props.backgroundColor ? this.props.backgroundColor : "#ffffff",
+            display: "inline-block"
+        }
+
         return(
-            <div style={style}>
+            <div style={(this.props.breakpoint && this.props.breakpoint >= this.state.width) ? styleBreakpoint : style}>
                 {this.props.children}
             </div>
         );

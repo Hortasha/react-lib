@@ -10,7 +10,8 @@ class Section extends Component {
             width: this.props.width ? this.props.width : null,
             backgroundColor: this.props.backgroundColor ? this.props.backgroundColor : null,
             margin: "0 auto",
-            padding: "5px"
+            padding: "5px",
+            fontFamily: "arial"
         }
 
         return(

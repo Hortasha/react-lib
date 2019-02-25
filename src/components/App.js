@@ -15,10 +15,10 @@ class App extends Component {
     render() {
         return(
             <Section>
-                <Column columns={2}>
+                <Column columns={2} breakpoint={1000}>
                     <p>Hello</p>
                 </Column>
-                <Column columns={2}>
+                <Column columns={2} breakpoint={1000}>
                     <p>Hello</p>
                 </Column>
             </Section>
