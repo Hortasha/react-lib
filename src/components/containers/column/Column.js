@@ -54,6 +54,7 @@ export default Column;
  * Props:
  * - columns
  * - backgroundColor
+ * - Breakpoint
  * 
  * Will display the children within the section tag.
  */
