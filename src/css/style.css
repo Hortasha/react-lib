@@ -32,11 +32,14 @@
   margin: 1em 0;
 }
 .editableText p span {
-  color: black;
-  background-color: lightgreen;
+  color: #000000;
+  background-color: #90EE90;
   padding: 5px;
   border-radius: 5px;
   cursor: pointer;
+}
+.editableText p span:hover {
+  background-color: #4ee44e;
 }
 
 body {

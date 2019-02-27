@@ -8,11 +8,15 @@
     & p {
 
         & span {
-            color: black;
-            background-color: lightgreen;
+            color: $editBtn;
+            background-color: $editBackground;
             padding: 5px;
             border-radius: 5px;
             cursor: pointer;
+
+            &:hover {
+                background-color: darken($editBackground, 20%);
+            }
         }
     }
 }
