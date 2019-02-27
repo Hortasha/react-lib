@@ -1,0 +1,18 @@
+.editableText {
+
+    & input {
+        display: block;
+        margin: 1em 0;
+    }
+
+    & p {
+
+        & span {
+            color: black;
+            background-color: lightgreen;
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+}

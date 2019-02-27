@@ -15,7 +15,7 @@
 .navbar ul a {
   display: block;
   padding: 20px 30px;
-  background-color: #d3d3d3;
+  background-color: #D3D3D3;
   text-decoration: none;
   color: #FFFFFF;
 }
@@ -25,6 +25,18 @@
 .navbar img {
   position: absolute;
   height: 100%;
+}
+
+.editableText input {
+  display: block;
+  margin: 1em 0;
+}
+.editableText p span {
+  color: black;
+  background-color: lightgreen;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 body {

@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import Section from './containers/section/section';
 import Column from './containers/column/column';
 import Navbar from './containers/navbar/navbar';
-import NavItem from './elements/navItem/navItem'
+import NavItem from './elements/navItem/navItem';
+import EditableText from './containers/editableText/editableText';
 
 class App extends Component {
     constructor(props) {
@@ -10,7 +11,6 @@ class App extends Component {
         this.state = {
 
         }
-        //this.function = this.getData.bind(this);
     }
 
 
@@ -24,7 +24,7 @@ class App extends Component {
                 </Navbar>
                 
                 <Column>
-                    <p>Some data here</p>
+                    <EditableText>Hello</EditableText>
                 </Column>
             </Section>
         );
