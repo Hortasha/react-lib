@@ -26,11 +26,11 @@ export default Column;
 
 
 /*
- * Component is used to split container into multible columns
+ * Component is used to create column
  *
  * Props:
  * - col (string)
  * - style (object)
  * 
- * Will display the children within the section tag.
+ * Will display the children within the tag.
  */

@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import Section from './containers/section/section';
 import Column from './containers/column/column';
+import Navbar from './containers/navbar/navbar';
+import NavItem from './elements/navItem/navItem'
 
 class App extends Component {
     constructor(props) {
@@ -14,12 +16,15 @@ class App extends Component {
 
     render() {
         return(
-            <Section>
-                <Column col={"sm-6"}>
-                    <p>Hello</p>
-                </Column>
-                <Column col={"sm-6"}>
-                    <p>Hello</p>
+            <Section fluid={true}>
+                <Navbar url={"https://via.placeholder.com/150"}>
+                    <NavItem url={"#1"}>Nav 1</NavItem>
+                    <NavItem url={"#2"}>Nav 2</NavItem>
+                    <NavItem url={"#3"}>Nav 3</NavItem>
+                </Navbar>
+                
+                <Column>
+                    <p>Some data here</p>
                 </Column>
             </Section>
         );

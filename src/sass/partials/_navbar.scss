@@ -1,0 +1,34 @@
+.navbar {
+    background-color: $navColor;
+    float: left;
+    width: 100%;
+    position: relative;
+
+    & li {
+        display: inline-block;
+    }
+
+    & ul {
+        padding: 0;
+        margin: 0;
+        float: right;
+
+        & a {
+            display: block;
+            padding: 20px 30px;
+            background-color: $navButton;
+            text-decoration: none;
+            color: $navText;
+            
+    
+            &:hover {
+                background-color: darken($navButton, 10%);
+            }
+        }
+    }
+
+    & img {
+        position: absolute;
+        height: 100%;
+    }
+}

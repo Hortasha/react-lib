@@ -1,3 +1,32 @@
+.navbar {
+  background-color: #EEEEEE;
+  float: left;
+  width: 100%;
+  position: relative;
+}
+.navbar li {
+  display: inline-block;
+}
+.navbar ul {
+  padding: 0;
+  margin: 0;
+  float: right;
+}
+.navbar ul a {
+  display: block;
+  padding: 20px 30px;
+  background-color: #d3d3d3;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.navbar ul a:hover {
+  background-color: #bababa;
+}
+.navbar img {
+  position: absolute;
+  height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;

@@ -34,5 +34,5 @@ export default Section;
  * - fluid (true or false)
  * - style (object)
  *
- * Will display the children within the section tag.
+ * Will display the children within the tag.
  */
