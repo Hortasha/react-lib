@@ -6,17 +6,19 @@ class Section extends Component {
     }
 
     render() {
-        const style = {
-            width: this.props.width ? this.props.width : null,
-            backgroundColor: this.props.backgroundColor ? this.props.backgroundColor : null,
-            margin: "0 auto",
-            padding: "5px",
-            fontFamily: "arial"
-        }
+
+        const style = this.props.style;
+        
+        const classes = [
+            this.props.fluid ? 'container-fluid' : 'container',
+            'section'
+        ];
 
         return(
-            <section style={style}>
-                {this.props.children}
+            <section className={classes.join(" ")} style={style}>
+                <div className="row">
+                    {this.props.children}
+                </div>
             </section>
         );
     }
@@ -29,8 +31,8 @@ export default Section;
  * Component is inteded to be used as a container for a section of webpage.
  *
  * Props:
- * - width
- * - backgroundColor
- * 
+ * - fluid (true or false)
+ * - style (object)
+ *
  * Will display the children within the section tag.
  */

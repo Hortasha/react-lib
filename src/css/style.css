@@ -1,8 +1,6 @@
-.column {
-  width: 100%;
-  background-color: #ffffff;
-  margin: 0 auto;
-  padding: 5px;
+body {
+  margin: 0;
+  padding: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
