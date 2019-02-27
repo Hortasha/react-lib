@@ -4,7 +4,7 @@ class EditableText extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: this.props.children,
+            data: (this.props.children === undefined) ? "" : this.props.children,
             edit: false
         }
 
@@ -53,12 +53,12 @@ class EditableText extends Component {
             this.state.edit ?
             //Edit mode
             <div className={classes.join(" ")} style={style}>
-                <input onKeyPress={this.handleKeyPress} autofocus="true" onBlur={this.handleBlur} onChange={this.handleChange} value={this.state.data} />
+                <input onKeyPress={this.handleKeyPress} autoFocus={true} onBlur={this.handleBlur} onChange={this.handleChange} value={this.state.data} />
             </div>
             :
             //Non edit mode
             <div className={classes.join(" ")} style={style}>
-                <p>{this.state.data} <span onClick={this.click}><i class="fas fa-pencil-alt"></i></span></p>
+                <p>{(this.state.data === "") ? "<empty>" : this.state.data} <span onClick={this.click}><i className="fas fa-pencil-alt"></i></span></p>
             </div>
         )
     }

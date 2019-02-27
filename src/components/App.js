@@ -24,7 +24,7 @@ class App extends Component {
                 </Navbar>
                 
                 <Column>
-                    <EditableText>Hello</EditableText>
+                    <EditableText></EditableText>
                 </Column>
             </Section>
         );
