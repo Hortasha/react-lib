@@ -39,12 +39,13 @@
   cursor: pointer;
 }
 .editableText p span:hover {
-  background-color: #4ee44e;
+  background-color: #38e038;
 }
 
 body {
   margin: 0;
   padding: 0;
+  background-color: #FFFFFF;
 }
 
 /*# sourceMappingURL=style.css.map */
