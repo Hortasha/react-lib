@@ -6,12 +6,6 @@ class NavItem extends Component {
     }
 
     render() {
-
-        const style = this.props.style;
-        
-        const classes = [
-        ];
-
         return(
             <li>
                 <a href={this.props.url}>{this.props.children}</a>
