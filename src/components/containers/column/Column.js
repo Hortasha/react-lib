@@ -10,7 +10,7 @@ class Column extends Component {
         const style = this.props.style;
 
         const classes = [
-            this.props.col ? 'col-' + this.props.col : 'col-sm-12',
+            this.props.col ? 'col-' + this.props.col : 'col-xs-12',
             'column'
         ];
 

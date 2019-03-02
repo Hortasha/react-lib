@@ -1,3 +1,13 @@
+.button {
+  border: none;
+  padding: 7px 20px;
+  background-color: #D3D3D3;
+  color: #000000;
+}
+.button:hover {
+  background-color: #adadad;
+}
+
 .navbar {
   background-color: #EEEEEE;
   float: left;

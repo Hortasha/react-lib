@@ -1,9 +1,6 @@
 import React, {Component} from 'react';
 
 class NavItem extends Component {
-    constructor(props) {
-        super(props);
-    }
 
     render() {
         return(
@@ -21,7 +18,6 @@ export default NavItem;
  *
  * Props:
  * - url (string)
- * - style (object)
  *
  * Will display the children within the tag.
  */
