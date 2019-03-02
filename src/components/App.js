@@ -15,7 +15,7 @@ class App extends Component {
     }
 
     test(variable, variable1, variable2) {
-        console.log("This is a test method" + (variable + variable1 + variable2));
+        console.log("Adding numbers" + (variable + variable1 + variable2));
     }
 
     render() {
