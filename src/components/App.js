@@ -15,8 +15,8 @@ class App extends Component {
         this.test = this.test.bind(this);
     }
 
-    test(variable, variable1, variable2) {
-        console.log("Adding numbersgit" + (variable + variable1 + variable2));
+    test(event, para1) {
+        console.log("Adding numbersgit " + para1);
     }
 
     render() {
@@ -30,8 +30,8 @@ class App extends Component {
                 
                 <Column>
                     <EditableText>Editable</EditableText>
-                    <Button method={this.test} para={[10, 15, 5]}>Hello</Button>
-                    <Input placeholder="input field"></Input>
+                    <Button method={this.test} para={[10]}>Hello</Button>
+                    <Input placeholder="input field" regex={/^[A-Za-z]{3}$/}></Input>
                 </Column>
             </Section>
         );

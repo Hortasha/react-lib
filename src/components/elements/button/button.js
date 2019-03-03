@@ -7,8 +7,12 @@ class Button extends Component {
         this.click = this.click.bind(this);
     }
 
-    click() {
-        this.props.method(...this.props.para);
+    click(event) {
+        if(this.props.para) {
+            this.props.method(event, ...this.props.para);
+        } else {
+            this.props.method(event);
+        }
     }
 
     render() {
@@ -21,12 +25,11 @@ class Button extends Component {
 export default Button;
 
 
-/*
- * Component is a button
+ /*
+ * Component is an button
  *
  * Props:
- * - click (method)
- * - para (Array of parameters for method)
- * 
- * Will display children and can pass onclick function
+ * - children
+ * - method(event, [blurPara])
+ * - para[]
  */

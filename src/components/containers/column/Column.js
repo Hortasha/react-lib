@@ -29,8 +29,9 @@ export default Column;
  * Component is used to create column
  *
  * Props:
- * - col (string)
- * - style (object)
+ * - children
+ * - col
+ * - style
  * 
  * Will display the children within the tag.
  */

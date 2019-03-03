@@ -31,8 +31,7 @@ export default Section;
  * Component is inteded to be used as a container for a section of webpage.
  *
  * Props:
- * - fluid (true or false)
- * - style (object)
- *
- * Will display the children within the tag.
+ * - children
+ * - fluid
+ * - style
  */

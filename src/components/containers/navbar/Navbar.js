@@ -33,7 +33,6 @@ export default Navbar;
  * Component contain all elements for navbar
  *
  * Props:
- * - style (object)
- *
- * Will display the children within the tag.
+ * - children
+ * - style
  */

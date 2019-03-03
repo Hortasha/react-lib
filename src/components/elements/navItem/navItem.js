@@ -17,7 +17,7 @@ export default NavItem;
  * Component is a selection in navbar
  *
  * Props:
- * - url (string)
+ * - children
+ * - url
  *
- * Will display the children within the tag.
  */

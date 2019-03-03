@@ -87,7 +87,7 @@ export default EditableText;
  * Component is text you can edit
  *
  * Props:
- * - style (object)
+ * - children
+ * - style
  *
- * Will display the children within the tag.
  */
