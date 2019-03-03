@@ -31,7 +31,7 @@ class App extends Component {
                 <Column>
                     <EditableText>Editable</EditableText>
                     <Button method={this.test} para={[10]}>Hello</Button>
-                    <Input placeholder="input field" regex={/^[A-Za-z]{3}$/}></Input>
+                    <Input regex={/^[a-z]{3}$/i}></Input>
                 </Column>
             </Section>
         );

@@ -42,7 +42,7 @@ class Input extends Component {
         return(
             <input
                 className="input"
-                style={this.state.valid ? {} : {backgroundColor: '#ff9191'}}
+                style={this.state.valid ? {border: '1px solid green'} : {border: '1px solid #ff9191'}}
                 type={this.props.type ? this.props.type : "text"}
                 value={this.state.value}
                 onChange={this.handleChange}

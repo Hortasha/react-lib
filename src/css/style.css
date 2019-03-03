@@ -8,9 +8,13 @@
   background-color: #adadad;
 }
 
-input {
+.input {
   display: block;
   margin: 1em 0;
+  outline: none;
+}
+.input:focus {
+  outline-width: 0;
 }
 
 .navbar {
