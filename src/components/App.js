@@ -4,7 +4,8 @@ import Column from './containers/column/column';
 import Navbar from './containers/navbar/navbar';
 import EditableText from './containers/editableText/editableText';
 import NavItem from './elements/navItem/navItem';
-import Button from './elements/button/button'
+import Button from './elements/button/button';
+import Input from './elements/input/input';
 
 class App extends Component {
     constructor(props) {
@@ -15,7 +16,7 @@ class App extends Component {
     }
 
     test(variable, variable1, variable2) {
-        console.log("Adding numbers" + (variable + variable1 + variable2));
+        console.log("Adding numbersgit" + (variable + variable1 + variable2));
     }
 
     render() {
@@ -28,8 +29,9 @@ class App extends Component {
                 </Navbar>
                 
                 <Column>
-                    <EditableText></EditableText>
+                    <EditableText>Editable</EditableText>
                     <Button method={this.test} para={[10, 15, 5]}>Hello</Button>
+                    <Input placeholder="input field"></Input>
                 </Column>
             </Section>
         );

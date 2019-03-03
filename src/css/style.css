@@ -8,6 +8,11 @@
   background-color: #adadad;
 }
 
+input {
+  display: block;
+  margin: 1em 0;
+}
+
 .navbar {
   background-color: #EEEEEE;
   float: left;
