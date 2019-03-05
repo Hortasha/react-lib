@@ -1,8 +1,13 @@
 .navbar {
     background-color: $navColor;
-    float: left;
     width: 100%;
     position: relative;
+
+    &::after {
+        clear: both;
+        content: " ";
+        display: block;
+    }
 
     & li {
         display: inline-block;

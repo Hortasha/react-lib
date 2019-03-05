@@ -11,17 +11,20 @@
 .input {
   display: block;
   margin: 1em 0;
-  outline: none;
 }
 .input:focus {
-  outline-width: 0;
+  outline: none;
 }
 
 .navbar {
   background-color: #EEEEEE;
-  float: left;
   width: 100%;
   position: relative;
+}
+.navbar::after {
+  clear: both;
+  content: " ";
+  display: block;
 }
 .navbar li {
   display: inline-block;
